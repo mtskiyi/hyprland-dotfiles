@@ -1,11 +1,10 @@
 ---- MONITORS ----
 hl.monitor({
-    output   = "DP-2",
-    mode     = "2560x1440@180.06300",
-    position = "0x0",
-    scale    = "1",
+    output = "",
+    mode = "preferred",
+    position = "auto",
+    scale = "auto",
 })
-
 
 ---- Window Rules ---
 
