@@ -29,7 +29,7 @@ local fileManager = "kitty ranger"
 
 hl.on("hyprland.start", function () 
   hl.exec_cmd("waybar")
-  hl.exec_cmd("swaybg -i ~/Downloads/black-hole.png -m fill")
+  hl.exec_cmd("swaybg -i ~/Wallpapers/wallpaper.png -m fill")
 end)
 	
 hl.on("hyprland.start", function()
