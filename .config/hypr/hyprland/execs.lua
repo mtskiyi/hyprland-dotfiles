@@ -1,7 +1,7 @@
 hl.on("hyprland.start", function()
     hl.exec_cmd("waybar")
     hl.exec_cmd("dunst")
-    hl.exec_cmd("swaybg -i ~/Wallpapers/black-hole.png -m fill")
+    hl.exec_cmd("swaybg -i ~/Wallpapers/wallpaper.png -m fill")
 end)
 
 hl.on("hyprland.start", function()
