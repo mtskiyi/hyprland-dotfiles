@@ -46,7 +46,7 @@ screenshots/
 ## Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/hyprland-dotfiles.git
+git clone https://github.com/mtskiyi/hyprland-dotfiles.git
 cd hyprland-dotfiles
 cp -r .config/* ~/.config/
 ```
