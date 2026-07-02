@@ -10,9 +10,21 @@ These configs are made for my own setup. Some paths, monitor settings, keyboard 
 
 ![Ranger](screenshots/ranger.png)
 
-![Rofi](screenshots/rofi.png)
+## Screenshots
 
-![Dunst notification](screenshots/dunst.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="screenshots/rofi.png" width="420"><br>
+      <b>Rofi</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/dunst.png" width="420"><br>
+      <b>Dunst</b>
+    </td>
+  </tr>
+</table>
+
 ## Setup
 
 - OS: Arch Linux
