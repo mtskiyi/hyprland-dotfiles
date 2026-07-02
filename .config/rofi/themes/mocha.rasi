@@ -11,7 +11,7 @@
     background-color: transparent;
     text-color: @fg;
 
-    font: "JetBrainsMono Nerd Font 12";
+    font: "JetBrains Mono Nerd Font 12";
 }
 
 window {
@@ -60,6 +60,7 @@ listview {
 element {
     background-color: transparent;
     text-color: @fg;
+    spacing: 8px;
     border-radius: 0px;
     padding: 6px 8px;
     border-radius: 8px;

@@ -1,5 +1,5 @@
 [global]
-    font = JetBrainsMono Nerd Font 11
+    font = JetBrainsMono Nerd Font 12.5
 
     markup = full
     format = "<b>%s</b>\n%b"
@@ -10,14 +10,14 @@
     hide_duplicate_count = true
     show_indicators = no
 
-    width = 380
-    height = 90
+    width = 400
+    height = 100
 
     origin = top-right
     offset = 20x20
 
     padding = 14
-    horizontal_padding = 14
+    horizontal_padding = 16
     text_icon_padding = 12
 
     alignment = left
@@ -31,13 +31,13 @@
     frame_width = 1
     separator_height = 0
 
-    background = "#1e222b"
-    foreground = "#cbd5e1"
+    background = "#1e1e2c"
+    foreground = "#ffffff"
     frame_color = "#2a2f3a"
 
     transparency = 0
 
-    ellipsize = middle
+    ellipsize = end
     ignore_newline = no
 
     idle_threshold = 120
@@ -45,19 +45,19 @@
     show_age_threshold = 60
 
 [urgency_low]
-    background = "#1e222b"
-    foreground = "#cbd5e1"
+    background = "#1e1e2c"
+    foreground = "#f8fafc"
     frame_color = "#2a2f3a"
     timeout = 4
 
 [urgency_normal]
-    background = "#1e222b"
-    foreground = "#cbd5e1"
+    background = "#1e1e2c"
+    foreground = "#ffffff"
     frame_color = "#2a2f3a"
     timeout = 8
 
 [urgency_critical]
-    background = "#1e222b"
-    foreground = "#ff5f5f"
+    background = "#1e1e2c"
+    foreground = "#ff9aa2"
     frame_color = "#ff5f5f"
     timeout = 0

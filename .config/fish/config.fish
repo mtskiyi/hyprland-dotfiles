@@ -1,3 +1,8 @@
 if status is-interactive
-# Commands to run in interactive sessions can go here
+    # No greeting
+    set fish_greeting
+    alias pamcan pacman
+    alias ls 'eza --icons'
 end
+
+source ~/.config/fish/auto-Hypr.fish
