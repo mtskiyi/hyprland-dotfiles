@@ -52,19 +52,15 @@ Install these packages before copying the dotfiles.
 ```bash
 sudo pacman -Syu --needed \
   git \
-  hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk hyprpolkitagent hyprshutdown \
+  hyprland xdg-desktop-portal-hyprland hyprshutdown \
   waybar rofi kitty dunst fish fastfetch ranger \
   swaybg \
   grim slurp wl-clipboard hyprpicker \
   brightnessctl playerctl pavucontrol \
-  pipewire wireplumber pipewire-pulse \
-  bluez bluez-utils bluetui \
-  networkmanager \
+  wireplumber \
+  bluetui \
   eza \
-  papirus-icon-theme adw-gtk-theme \
-  qt5-wayland qt6-wayland \
-  noto-fonts noto-fonts-emoji \
-  libnotify xdg-utils
+  papirus-icon-theme adw-gtk-theme
 ```
 
 ### AUR packages
