@@ -1,0 +1,12 @@
+hl.on("hyprland.start", function()
+    hl.exec_cmd("waybar")
+    hl.exec_cmd("dunst")
+    hl.exec_cmd("swaybg -i ~/Wallpapers/black-hole.png -m fill")
+end)
+
+hl.on("hyprland.start", function()
+    hl.exec_cmd("gsettings set org.gnome.desktop.interface color-scheme prefer-dark")
+    hl.exec_cmd("gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark")
+    hl.exec_cmd("gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark")
+    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE XDG_SESSION_DESKTOP QT_QPA_PLATFORMTHEME GTK_THEME")
+end)
