@@ -124,7 +124,7 @@ def backup_and_copy_dotfiles() -> None:
     wallpapers_dir.mkdir(parents=True, exist_ok=True)
 
     if WALLPAPER.exists():
-        shutil.copy2(WALLPAPER, wallpapers_dir / "black-hole.png")
+        shutil.copy2(WALLPAPER, wallpapers_dir / "wallpaper.png")
         print(":: Installed wallpaper to ~/Wallpapers/black-hole.png")
     else:
         print(":: Warning: Wallpapers/wallpaper.png not found.")
