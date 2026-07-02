@@ -6,25 +6,28 @@ These configs are made for my own setup. Some paths, monitor settings, keyboard 
 
 ## Screenshots
 
-<p align="center">
-  <img src="screenshots/desktop.png" width="420">
-  <img src="screenshots/ranger.png" width="420">
-</p>
-
-<p align="center">
-  <b>Desktop</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Ranger</b>
-</p>
-
-<p align="center">
-  <img src="screenshots/rofi.png" width="420">
-  <img src="screenshots/dunst.png" width="420">
-</p>
-
-<p align="center">
-  <b>Rofi</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Dunst</b>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="screenshots/desktop.png" width="420"><br>
+      <b>Desktop</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/ranger.png" width="420"><br>
+      <b>Ranger</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="screenshots/rofi.png" width="420"><br>
+      <b>Rofi</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/dunst.png" width="420"><br>
+      <b>Dunst</b>
+    </td>
+  </tr>
+</table>
 
 ## Setup
 
