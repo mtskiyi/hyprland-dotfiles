@@ -6,28 +6,15 @@ These configs are made for my own setup. Some paths, monitor settings, keyboard 
 
 ## Screenshots
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="screenshots/desktop.png" width="420"><br>
-      <b>Desktop</b>
-    </td>
-    <td align="center">
-      <img src="screenshots/ranger.png" width="420"><br>
-      <b>Ranger</b>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="screenshots/rofi.png" width="420"><br>
-      <b>Rofi</b>
-    </td>
-    <td align="center">
-      <img src="screenshots/dunst.png" width="420"><br>
-      <b>Dunst</b>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="screenshots/desktop.png" width="420">
+  <img src="screenshots/ranger.png" width="420">
+</p>
+
+<p align="center">
+  <img src="screenshots/rofi.png" width="420">
+  <img src="screenshots/dunst.png" width="420">
+</p>
 
 ## Setup
 
