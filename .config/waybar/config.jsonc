@@ -11,6 +11,7 @@
         "clock#time"
     ],
     "modules-right": [
+	"group/media-player",
         "pulseaudio",
         "bluetooth",
         "network",
@@ -24,7 +25,8 @@
     "hyprland/window": {
         "format": "{}",
         "max-length": 45,
-        "separate-outputs": true
+        "separate-outputs": true,
+	"on-click-right": "bash ~/.config/waybar/scripts/menu.sh"
     },
     "clock#time": {
         "format": "{:%H:%M}",
@@ -39,6 +41,63 @@
                 "today": "<span color='#f9e2af'><b>{}</b></span>"
             }
         }
+    },
+    "group/media-player":{
+    	"orientation": "horizontal",
+    	"modules": [
+        	"custom/media",
+        	"custom/media-prev",
+		"custom/media-toggle",
+        	"custom/media-next"
+    	]
+    },
+    "custom/media":{
+    	"format": "🎜 {}",
+    	"return-type": "json",
+    	"max-length": 35,
+    	"escape": true,
+	"hide-empty-text": true,
+    	"exec": "bash ~/.config/waybar/scripts/mediaplayer.sh 2> /dev/null",
+    	"on-click": ""
+    },
+    "custom/media-prev":{
+    	"format": "{icon}",
+	"return-type": "json",
+	"exec": "bash ~/.config/waybar/scripts/mediaplayer.sh 2> /dev/null",
+	"format-icons": {
+        	"playing": "󰒮",
+        	"paused": "󰒮",
+        	"stopped": ""
+    	},
+	"on-click": "playerctl previous",
+    	"tooltip": false,
+	"hide-empty-text": true
+    },
+    "custom/media-toggle":{
+    	"format": "{icon}",
+    	"return-type": "json",
+	"hide-empty-text": true,
+    	"exec": "bash ~/.config/waybar/scripts/mediaplayer.sh 2> /dev/null",
+    	"format-icons": {
+        	"playing": "󰏤",  
+        	"paused": "󰐊",   
+        	"stopped": ""    
+    	},
+    	"on-click": "playerctl play-pause",
+    	"tooltip": false
+    },
+    "custom/media-next": {
+    	"format": "{icon}",
+	"return-type": "json",
+	"exec": "bash ~/.config/waybar/scripts/mediaplayer.sh 2> /dev/null",
+    	"format-icons": {
+        	"playing": "󰒭",
+        	"paused": "󰒭",
+        	"stopped": ""
+    	},
+	"on-click": "playerctl next",
+    	"tooltip": false,
+	"hide-empty-text": true
     },
     "pulseaudio": {
         "format": "󰕾 {volume}%",
@@ -60,7 +119,7 @@
     },
     "tray": {
         "icon-size": 16,
-        "spacing": 8
+        "spacing": 8,
     },
     "bluetooth": {
         "format": " {status}",
