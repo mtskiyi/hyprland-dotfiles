@@ -12,6 +12,7 @@ These configs are made for my own setup. Some paths, monitor settings, keyboard 
 
 ![Rofi](screenshots/rofi.png)
 
+![Dunst notification](screenshots/dunst.png)
 ## Setup
 
 - OS: Arch Linux
