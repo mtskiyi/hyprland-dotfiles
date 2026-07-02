@@ -6,28 +6,12 @@ These configs are made for my own setup. Some paths, monitor settings, keyboard 
 
 ## Screenshots
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="screenshots/desktop.png" width="420"><br>
-      <b>Desktop</b>
-    </td>
-    <td align="center">
-      <img src="screenshots/ranger.png" width="420"><br>
-      <b>Ranger</b>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="screenshots/rofi.png" width="420"><br>
-      <b>Rofi</b>
-    </td>
-    <td align="center">
-      <img src="screenshots/dunst.png" width="420"><br>
-      <b>Dunst</b>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="screenshots/desktop.png" width="200">
+  <img src="screenshots/ranger.png" width="200">
+  <img src="screenshots/rofi.png" width="200">
+  <img src="screenshots/dunst.png" width="200">
+</p>
 
 ## Setup
 
@@ -41,28 +25,9 @@ These configs are made for my own setup. Some paths, monitor settings, keyboard 
 - File manager: Ranger
 - Fetch: Fastfetch
 
-## Structure
-
-```txt
-.config/
-├── hypr/
-├── waybar/
-├── rofi/
-├── kitty/
-├── dunst/
-├── fish/
-├── fastfetch/
-├── ranger/
-├── gtk-3.0/
-└── gtk-4.0/
-
-Wallpapers/
-screenshots/
-```
-
 ## Required packages
 
-Install these packages before copying the dotfiles.
+The installer installs these packages automatically.
 
 ### Official Arch packages
 
@@ -82,26 +47,53 @@ sudo pacman -Syu --needed \
 
 ### AUR packages
 
-These are needed for the exact font and Qt theme used by the configs.
+The installer installs these automatically if `yay` or `paru` is installed.
 
 ```bash
 yay -S --needed ttf-google-sans-code-nf hyprqt6engine
 ```
 
-If you use `paru` instead of `yay`:
+or:
 
 ```bash
 paru -S --needed ttf-google-sans-code-nf hyprqt6engine
 ```
 
-## Enable services
+## Install
+
+Clone the repo:
 
 ```bash
-sudo systemctl enable --now NetworkManager
-sudo systemctl enable --now bluetooth
+git clone https://github.com/mtskiyi/hyprland-dotfiles.git
+cd hyprland-dotfiles
 ```
 
-## Install
+Run the installer:
+
+```bash
+chmod +x install.sh installer.py
+./install.sh
+```
+
+The installer asks once before running.
+
+After confirmation, it will:
+
+- install required Arch packages
+- install AUR packages if `yay` or `paru` exists
+- backup existing configs
+- copy dotfiles to `~/.config`
+- copy wallpaper to `~/Wallpapers/wallpaper.png`
+
+Backups are saved as:
+
+```txt
+~/.config-backup-YYYYMMDD-HHMMSS
+```
+
+## Manual install
+
+If you do not want to use the installer:
 
 ```bash
 git clone https://github.com/mtskiyi/hyprland-dotfiles.git
@@ -122,9 +114,38 @@ chsh -s /usr/bin/fish
 
 Log out and log back in after changing shell.
 
+## Structure
+
+```txt
+hyprland-dotfiles/
+├── .config/
+│   ├── hypr/
+│   ├── waybar/
+│   ├── rofi/
+│   ├── kitty/
+│   ├── dunst/
+│   ├── fish/
+│   ├── fastfetch/
+│   ├── ranger/
+│   ├── gtk-3.0/
+│   └── gtk-4.0/
+├── Wallpapers/
+│   └── wallpaper.png
+├── screenshots/
+│   ├── desktop.png
+│   ├── ranger.png
+│   ├── rofi.png
+│   └── dunst.png
+├── install.sh
+├── installer.py
+└── README.md
+```
+
 ## Notes
 
 - These configs use Hyprland Lua-style config files.
 - Wallpaper is copied as `~/Wallpapers/wallpaper.png` because the Hyprland config uses that path.
-- Keyboard layout is set to `us` by default. Change it in `.config/hypr/hyprland/general.lua` if needed.
+- Keyboard layout is set to `us` by default.
+- Change keyboard layout or monitor settings in `.config/hypr/hyprland/general.lua`.
+- Existing configs are backed up when using the installer.
 - Some configs are made for my personal setup, so edit paths and settings if something does not match your system.
